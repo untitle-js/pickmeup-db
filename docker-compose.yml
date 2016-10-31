@@ -1,0 +1,9 @@
+pickmeup-db:
+  image: pickmeup-db
+  ports:
+    - "5432:5432" # Bind host port 5432 to PostgreSQL port 5432
+  environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_DB: pickmeup
+
